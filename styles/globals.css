@@ -1,16 +1,126 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(-45deg, #ff5724, #ff4b90, #3acbff, #29f9c8);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+.center-div {
+  padding-top: 20px;
+  width: 90vw;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left-side,
+.right-side {
+  margin-top: auto;
+  height: 80vh;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.left-side {
+  margin-right: 0.5em;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: aliceblue;
+  resize: none;
+  /* border: 1px solid white; */
+}
+
+.right-side {
+  margin-left: 0.5em;
+  resize: none;
+  background-color: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid black;
+  font-family: 'Nunito', sans-serif;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: rgb(0, 0, 255);
 }
 
-* {
-  box-sizing: border-box;
+.left-side2,
+.right-side2 {
+  width: 90vw;
+  margin-right: auto;
+  margin-left: auto;
+  height: 45vh;
+  padding-left: 0.5em;
+}
+
+.left-side2 {
+  padding-top: 1em;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: aliceblue;
+  resize: none;
+  margin-bottom: 0.75em;
+}
+
+.right-side2 {
+  border-radius: 20px;
+  resize: none;
+  background-color: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid black;
+  font-family: 'Nunito', sans-serif;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
