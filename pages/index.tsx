@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Link from 'next/link'
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import Head from 'next/head'
@@ -13,7 +12,7 @@ const Home: NextPage = () => {
 
   const [isLargerThan650] = useMediaQuery('(min-width: 888px)')
   const [isLargerThan6502] = useMediaQuery('(max-width: 888px)')
-  const [markdown, setMarkDown] = useState("# Welcome to Marky! Write your markdown here ![Alt text](https://markdown-nextjs-chi.vercel.app/welcome.gif)---");
+  const [markdown, setMarkDown] = useState("Visit my [Github](https://github.com/Overlord15/markdown-nextjs) repository and give star ⭐");
   return (
     <>
       <Head>
