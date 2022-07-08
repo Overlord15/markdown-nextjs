@@ -17,7 +17,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>
-          Marky - By Anupam
+          Marky - The Markdown Editor
         </title>
         <link rel="apple-touch-icon" sizes="180x180" href="/marky.png" />
         <link rel="shortcut icon" href="/marky.png" />
