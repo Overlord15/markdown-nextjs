@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
   const [isLargerThan650] = useMediaQuery('(min-width: 888px)')
   const [isLargerThan6502] = useMediaQuery('(max-width: 888px)')
-  const [markdown, setMarkDown] = useState("Welcome to Marky! Write your markdown here");
+  const [markdown, setMarkDown] = useState("# Welcome to Marky! Write your markdown here ![Alt text](https://markdown-nextjs-chi.vercel.app/welcome.gif)---");
   return (
     <>
       <Head>
